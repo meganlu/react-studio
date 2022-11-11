@@ -1,9 +1,83 @@
 /* Add styling for your page here */
 
 .App {
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
+.App .title {
+    width: 100%;
+    padding-left: 1em;
+    font-size: 3em;
+}
+
+.App .left {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    padding: 3em;
+    margin: none;
+}
+
+.App .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.App .cart {
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 247, 235);
+    width: 26%;
+    border-radius: 2em;
+}
+
+.cartitems {
+    padding-right: 3em;
+    text-align: right;
+}
+
+.cartitems hr {
+    margin-left: 3em;
+    width: 90%;
+}
+
+.App .carttitle {
+    margin: 2em;
+    margin-top: 3em;
 }
 
 .BakeryItem {
-  
+    background-color: rgb(255, 247, 235);
+    margin: 1em;
+    border-radius: 2em;
+    box-shadow: 0em 0.5em 1.5em rgb(231, 204, 169);
+    height: 48em;
+}
+.BakeryItem img {
+    width: 100%;
+    border-radius: 2em;
+}
+
+.BakeryItem .info {
+    padding: 1em;
+}
+
+.BakeryItem button {
+    background-color: rgb(187, 143, 85);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 0.8em;
+    border: none;
+    border-radius: 2em;
+}
+
+.BakeryItem button:hover {
+    background-color: rgb(154, 115, 63);
 }
