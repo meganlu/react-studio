@@ -46,10 +46,10 @@ function App() {
         {/* TODO: render a list of items in the cart */}
         <div className="cartitems">
           {cart.map(item => (
-            <h3>{item.quantity}x {item.name}</h3>
+            <h5>{item.quantity}x {item.name}</h5>
           ))}
           <hr/>
-          <h2>Total: ${total.toFixed(2)}</h2>
+          <h4>Total: ${total.toFixed(2)}</h4>
         </div>     
       </div>
     </div>

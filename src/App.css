@@ -11,13 +11,13 @@
 .App .title {
     width: 100%;
     padding-left: 1em;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .App .left {
     display: flex;
     flex-direction: column;
-    width: 68%;
+    width: 65%;
     padding: 3em;
     margin: none;
 }
@@ -25,7 +25,7 @@
 .App .items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 8px;
 }
 
 .App .cart {
@@ -50,6 +50,7 @@
 .App .carttitle {
     margin: 2em;
     margin-top: 3em;
+    font-size: 1.5em;
 }
 
 .BakeryItem {
@@ -57,7 +58,8 @@
     margin: 1em;
     border-radius: 2em;
     box-shadow: 0em 0.5em 1.5em rgb(231, 204, 169);
-    height: 36em;
+    height: 23em;
+    position: relative;
 }
 .BakeryItem img {
     width: 100%;
@@ -65,11 +67,16 @@
 }
 
 .BakeryItem h1 {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .BakeryItem h3 {
+    font-size: 0.8em;
     font-weight: normal;
+}
+
+.BakeryItem h2 {
+    font-size: 1em;
 }
 
 .BakeryItem .info {
@@ -79,11 +86,39 @@
 .BakeryItem button {
     background-color: rgb(187, 143, 85);
     color: white;
-    font-size: large;
     font-weight: bold;
+    font-size: 0.7em;
     padding: 0.8em;
     border: none;
     border-radius: 2em;
+    margin-top: 0.8em;
+}
+
+.BakeryItem .infoDiv {
+    height: 6em;
+
+}
+
+.BakeryItem .priceButtonDiv {
+    position: absolute;
+    bottom: 1; 
+    width: 100%;
+}
+
+.BakeryItem .priceButtonDiv::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.BakeryItem .priceDiv {
+    float: left;
+    width: 50%;
+}
+
+.BakeryItem .buttonDiv {
+    float: left;
+    width: 50%;
 }
 
 .BakeryItem button:hover {

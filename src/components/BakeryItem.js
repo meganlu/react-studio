@@ -4,10 +4,17 @@ export default function BakeryItem(props) {
         <div className="BakeryItem">
             <img src={props.image}/>
             <div className="info">
-                <h1>{props.name}</h1>
-                <h3>{props.desc}</h3>
-                <h2>${props.price}</h2>
-                <button onClick={() => props.onAdd(props.name, props.price)}>Add to Cart</button>
+                <div className="infoDiv">
+                    <h1>{props.name}</h1>
+                    <h3>{props.desc}</h3>
+                </div>
+                <div className="priceButtonDiv">
+                    <div className="priceDiv"><h2>${props.price}</h2></div>
+                    <div className="buttonDiv">
+                        <button onClick={() => props.onAdd(props.name, props.price)}>Add to Cart</button>
+                    </div>
+               </div>
+                
             </div>
         </div>
     );
