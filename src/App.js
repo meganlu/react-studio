@@ -16,7 +16,6 @@ function App() {
   const [total, setTotal] = useState(0);
 
   const onClick = (name, price) => {
-    console.log("added" + name);
     for (let i = 0; i < cart.length; i++) {
       if (cart[i].name == name) {
         cart[i].quantity += 1
